@@ -1,0 +1,201 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            STRUTTURA E FONTS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4 {
+  padding: 0;
+  margin: 0 0 0 25px;
+  color: #444444;
+  font-size: 15px;
+  position: relative;
+}
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p {
+    color: #999999;
+    font-size: 12px;
+    margin: 0 0 0 25px;
+}
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu, .navbar-nav > .messages-menu > .dropdown-menu > li .menu, .navbar-nav > .tasks-menu > .dropdown-menu > li .menu {
+    max-height: 500px;
+}
+.navbar-static-top {
+	border-bottom: 1px solid #000 !important;
+}
+.content-wrapper {
+    min-width: 300px;
+}
+#admin_footer {
+    margin-top: 30px;
+}
+.form-control {
+
+}
+.img-container img {
+  width: 100%;
+}
+.img-container {
+  width: 30%;
+  /*background: #777;*/
+  margin: 0 auto;
+}
+.dit-picture {
+	width: 50%;
+	max-width: 300px;
+}
+.usr-picture {
+    width: 33%;
+	max-width: 200px;
+}
+.btn-50 {
+    width: 50px;
+}
+.btn-100 {
+    text-align: right;
+    padding-right: 15px;
+    width: 100px;
+}
+.glyphicon-edit {
+    padding-right: 5px;
+}
+.right {
+    text-align: right;
+    margin-right: 1em;
+}
+.btn-200 {
+    width: 200px;
+}
+.btn-full {
+    width: 100%;
+}
+.col-md-12 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #f4f4f4;
+}
+.col-sm-8 {
+    padding-left: 0px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.FacetFieldCaptionTD
+{
+    padding: 5px 5px 5px 5px;
+}
+.FacetDataTD input,select,textarea {
+	padding-left: 10px;
+	margin-left: 5px;
+}
+
+.form-group input {
+	padding-left: 10px;
+}
+.tab-content {
+    background-color: #aae2a8;
+    border: 0px solid #ddd;
+    border-top: 0px;
+    padding: 15px 15px 15px 15px;
+}
+.table {
+    border-collapse: initial;
+    margin-bottom: 0px;
+}
+.Tmiddle {
+	width: 50%;
+}
+#products-list
+{
+    border-top: 0px solid;
+}
+.main-header {
+    border-collapse: separate;
+    /*border: 1px solid;*/
+}
+
+.logo {
+
+}
+.panel-company {
+    min-height: 200px;
+	width: 100%;
+}
+.navbar-static-bottom {
+	border-bottom: 1px solid #000;
+}
+.panel-user {
+    min-height: 200px;
+	width: 100%;
+}
+.sidebar-menu .treeview-menu > li > a {
+    padding: 5px 5px 5px 5px;
+}
+.FacetFormHeaderFont {
+   /*display: none;*/
+}
+.control-sidebar-menu .menu-info {
+    margin-left: 0px;
+}
+.control-sidebar-menu > li > a {
+    padding: 2px 15px;
+}
+.gaz-home-scadenze {
+    min-height: 260px;
+}
+#fornitori span {
+    display:none; 
+}
+#clienti span {
+    display:none; 
+}
+@media only screen and (max-width: 991px) {
+    /* Force table to not be like tables anymore */
+    #gaz-responsive-table table,
+    #gaz-responsive-table thead,
+    #gaz-responsive-table tbody,
+    #gaz-responsive-table th,
+    #gaz-responsive-table td,
+    #gaz-responsive-table tr {
+        display: block;
+    }
+    #gaz-responsive-table table{
+        padding: 2px;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #gaz-responsive-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #gaz-responsive-table tr { border: 1px solid #ccc; }
+
+    #gaz-responsive-table td {
+        /* Behave like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+    }
+
+    #gaz-responsive-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    #gaz-responsive-table td:before { content: attr(data-title); }
+
+    .gaz-table-form .form-group {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}

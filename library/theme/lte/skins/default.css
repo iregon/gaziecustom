@@ -1,0 +1,76 @@
+body {
+    /*background-image : url("../../../../library/images/sfondo.png");*/
+}
+.help {
+    margin-bottom: 20px;
+}
+.contenuto-help {
+   background-color: #fff;
+}
+.control-label {
+   /*background-color: #aae2a8;*/
+}
+.dropdown-menu {
+    border-color: #000;
+}
+.FacetFieldCaptionTD {
+    background-color: #aae2a8;
+    color: #000;
+}
+th {
+    background-color : #aae2a8;
+}
+th a {
+    color: #000;
+}
+th a:hover {
+    color: #eee;
+}
+.FacetColumnTD {
+    background-color: #daeada;
+    color: #000;
+}
+.box-primary {
+/*    background-color: #fff;*/
+}
+.FacetDataTD {
+    background-color: #fff;
+}
+.content-wrapper {
+    background-image: url("../../../../library/images/sfondo.png");
+}
+.Tlarge {
+    border: 1px solid #000000;
+}
+.Tmiddle {
+    border: 1px solid #000000;
+}
+.table {
+    
+}
+#products-list
+{
+}
+.main-header {
+    /*border: 1px solid #000000;*/
+}
+.logo {
+    /*border-right: 1px solid #000000;*/
+}
+.logo-lg {
+    font-size: 14px;
+}
+.FacetFormTABLE {
+    border: 1px solid #000000;
+}
+.FacetFormHeaderFont {
+}
+#preventDuplicate {
+    color: #000;
+}
+.gaz-table-form {
+    background: #aae2a8;
+}
+.sidebar-menu .treeview-menu > li > a {
+    padding-left: 15px;
+}
