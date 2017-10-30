@@ -286,7 +286,7 @@ table.selectTable td {
 
 
 /** ENRICO FEDELE */
-/* Inizio stili custom pper jquery-ui */
+/* Inizio stili custom per jquery-ui */
 /* highlight results */
 .ui-autocomplete span.hl_results {
 	background-color: #ffff66;
@@ -409,4 +409,28 @@ table.selectTable td {
 
 .navbar-nav > .open > a {
 	background-color: #000 !important;
+}
+
+/*Denominazione dell'azienda presente nell'header*/
+.ragso, .ragso > a {
+	color: #fff !important;
+	background-color: #333 !important;
+}
+
+.bg-dark333 {
+	background-color: #333 !important;
+	color: #fff !important;
+}
+
+.margin10 {
+	margin: 10px !important;
+}
+
+.navbar-company {
+	height: 100%;
+}
+
+.nav .open > a, .nav .open > a:hover, .dropdown-menu > li > a:hover {
+	background-color: #333 !important;
+	color: #fff !important;
 }

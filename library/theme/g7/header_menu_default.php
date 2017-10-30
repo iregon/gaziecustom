@@ -61,18 +61,20 @@ function submenu($menu_data) {
 ?>
 
 <!-- Navbar static top per menu multilivello responsive -->
-<div class="navbar navbar-default" role="navigation">
-    <div id="l-wrapper" class="navbar-header company-color">
+<div class="navbar navbar-default bg-dark333" role="navigation">
+    <div id="l-wrapper" class="navbar-header company-color ragso margin10">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+        <p style="float:left;margin:0">Azienda:&nbsp;</p>
         <a  href="../../modules/root/admin.php"> <?php echo strtoupper($admin_aziend["ragso1"]); ?>
         </a>
     </div>
-    <div class="collapse navbar-collapse" style="background-color:#333;border-bottom:#000 solid 4px">
+    <br><br>
+    <div class="collapse navbar-collapse bg-dark333" style="border-bottom:#000 solid 4px">
         <ul class="nav navbar-nav">
             <?php
             // stampo la prima voce della barra del menù con il dropdown dei moduli
