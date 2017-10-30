@@ -119,7 +119,8 @@ function submenu($menu_data) {
         ?>
         <li id="user-position">
             <a href="../root/logout.php" style="color:#fff">
-                <img src="../root/view.php?table=admin&field=Login&value=<?php echo $admin_aziend['Login'] ?>" height="30" title="Logout - <?php echo $admin_aziend['Cognome'] . ' ' . $admin_aziend['Nome']; ?>" >Exit
+                <img src="../../library/images/exit.png" height="30" style="float:left" title="Logout - <?php echo $admin_aziend['Cognome'] . ' ' . $admin_aziend['Nome']; ?>" >
+                <p style="margin-left:5px;float:left;margin-bottom:0">Exit</p>
             </a>
         </li>
         </ul>
