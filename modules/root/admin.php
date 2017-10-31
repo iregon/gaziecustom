@@ -88,7 +88,7 @@ function selectCompany($name, $val, $strSearch = '', $val_hiddenReq = '', $mesg,
 $checkUpd = new CheckDbAlign;
 $data = $checkUpd->TestDbAlign();
 if ($data) {
-    // induco l'utente ad aggiornare il db      
+    // induco l'utente ad aggiornare il db
     header("Location: ../../setup/install/install.php?tp=" . $table_prefix);
     exit;
 }
@@ -173,7 +173,7 @@ if ($t > 4 && $t <= 13) {
         ?>
         <div class="row text-center">
             <div class="col-sm-6">
-                <div class="panel panel-default company-color panel-company" >
+                <div class="panel panel-default company-color panel-company border-top-blue no-border-radius" >
                     <p>
                         <?php echo $script_transl['company'] ?>
                     <div class="img-containter">
@@ -192,7 +192,7 @@ if ($t > 4 && $t <= 13) {
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="panel panel-default panel-user" >
+                <div class="panel panel-default panel-user company-color border-top-blue no-border-radius" >
                     <p>
                         <?php echo ucfirst($msg) . " " . $admin_aziend['Nome'] . ' (ip=' . $admin_aziend['last_ip'] . ')'; ?>
                     </p>
@@ -204,8 +204,8 @@ if ($t > 4 && $t <= 13) {
                     </div>
                     </p>
                     <p>
-                        <?php echo $script_transl['access'] . $admin_aziend['Access'] . $script_transl['pass'] . gaz_format_date($admin_aziend['datpas']) ?> 
-                    </p>    
+                        <?php echo $script_transl['access'] . $admin_aziend['Access'] . $script_transl['pass'] . gaz_format_date($admin_aziend['datpas']) ?>
+                    </p>
                 </div>
             </div>
         </div>
@@ -324,7 +324,7 @@ if ($t > 4 && $t <= 13) {
             <?php
         }
         ?>
-        <div class="collapse navbar-collapse"> 
+        <div class="collapse navbar-collapse">
             <!-- per adesso lo faccio collassare in caso di small device anche se si potrebbe fare uno switch in verticale -->
             <?php
             $result = gaz_dbi_dyn_query("*", $gTables['menu_usage'], ' company_id="' . $form['company_id'] . '" AND adminid="' . $admin_aziend['Login'] . '" ', ' click DESC, last_use DESC', 0, 8);
@@ -413,7 +413,7 @@ if ($t > 4 && $t <= 13) {
         </div>
         <div id='admin_footer' align="center">
             <div > GAzie Version: <?php echo GAZIE_VERSION; ?> Software Open Source (lic. GPL)
-                <?php echo $script_transl['business'] . " " . $script_transl['proj']; ?> 
+                <?php echo $script_transl['business'] . " " . $script_transl['proj']; ?>
                 <a target="_new" title="<?php echo $script_transl['auth']; ?>" href="http://www.devincentiis.it"> http://www.devincentiis.it</a>
             </div>
             <div>
@@ -440,8 +440,8 @@ if ($t > 4 && $t <= 13) {
 <?php
 require("../../library/include/footer.php");
 
-/* questa parte sarebbe da mettere nel footer specifico del tema (library/theme/nome_tema/footer.php) 
- * in ognuno dei quali mettere una classe contenente, oltre al costrutto, anche le varie funzioni 
+/* questa parte sarebbe da mettere nel footer specifico del tema (library/theme/nome_tema/footer.php)
+ * in ognuno dei quali mettere una classe contenente, oltre al costrutto, anche le varie funzioni
  * richiamabili alla fine dagli script php e comunque presenti sui footer di TUTTU i motori di template
  */
 if ($admin_aziend['Abilit'] >= 8 && $schedule_view['val'] >= 1) {
