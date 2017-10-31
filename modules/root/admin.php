@@ -177,7 +177,9 @@ if ($t > 4 && $t <= 13) {
                     <p>
                         <?php echo $script_transl['company'] ?>
                     <div class="img-containter">
-                        <a href="../config/admin_aziend.php"><img class="img-circle dit-picture" src="view.php?table=aziend&value=<?php echo $form['company_id']; ?>" alt="Logo" style="max-width: 100%;" border="0" title="<?php echo $script_transl['upd_company']; ?>" ></a>
+                        <a href="../config/admin_aziend.php">
+                          <img class="img-circle dit-picture" src="view.php?table=aziend&value=<?php echo $form['company_id']; ?>" alt="Logo" style="max-width: 95%;" border="0" title="<?php echo $script_transl['upd_company']; ?>" >
+                        </a>
                     </div>
                     </p>
                     <p>
@@ -187,14 +189,14 @@ if ($t > 4 && $t <= 13) {
                         ?>
                     </p>
                     <p>
-                        <?php echo $script_transl['logout']; ?> ⇒ <input name="logout" type="submit" value=" Logout ">
+                        <?php echo $script_transl['logout']; ?> ⇒ <input name="logout" type="submit" value=" Logout " >
                     </p>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="panel panel-default panel-user company-color border-top-blue no-border-radius" >
                     <p>
-                        <?php echo ucfirst($msg) . " " . $admin_aziend['Nome'] . ' (ip=' . $admin_aziend['last_ip'] . ')'; ?>
+                        <?php echo ucfirst($msg) . " " . $admin_aziend['Nome'] . '<br>(ip=' . $admin_aziend['last_ip'] . ')'; ?>
                     </p>
                     <p>
                     <div class="img-containter">
@@ -204,7 +206,7 @@ if ($t > 4 && $t <= 13) {
                     </div>
                     </p>
                     <p>
-                        <?php echo $script_transl['access'] . $admin_aziend['Access'] . $script_transl['pass'] . gaz_format_date($admin_aziend['datpas']) ?>
+                        <?php echo $script_transl['pass'] . gaz_format_date($admin_aziend['datpas']) ?>
                     </p>
                 </div>
             </div>
@@ -218,10 +220,11 @@ if ($t > 4 && $t <= 13) {
             <div class="row">
                 <div class="col-sm-6">
                     <div class="box gaz-home-scadenze">
-                        <div class="box-header">
-                            <h3 class="box-title"><?php echo $script_transl['sca_scacli']; ?></h3>
-                        </div>
-                        <div class="box-body">
+
+                        <div class="box-body border-top-blue">
+                          <div class="box-header">
+                              <h3 class="box-title"><?php echo $script_transl['sca_scacli']; ?></h3>
+                          </div>
                             <table id="clienti" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="clienti_info">
                                 <thead>
                                     <tr role="row">
@@ -267,13 +270,13 @@ if ($t > 4 && $t <= 13) {
                         </div>
                     </div>
                 </div>
-                <!-- Scadenzario fornitori -->
+                <!-- Scadenzario  fornitori -->
                 <div class="col-sm-6">
                     <div class="box gaz-home-scadenze">
-                        <div class="box-header">
-                            <h3 class="box-title"><?php echo $script_transl['sca_scafor']; ?></h3>
-                        </div>
-                        <div class="box-body">
+                        <div class="box-body border-top-blue">
+                          <div class="box-header">
+                              <h3 class="box-title"><?php echo $script_transl['sca_scafor']; ?></h3>
+                          </div>
                             <table id="fornitori" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="fornitori_info">
                                 <thead>
                                     <tr role="row">

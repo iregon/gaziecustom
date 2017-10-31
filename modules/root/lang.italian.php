@@ -38,7 +38,7 @@ $strScript = array("admin.php" =>
             'legrap' => ' ATTENZIONE!!! Hai dimenticato di indicare il nome e/o il cognome del legale rappresentante'
         ),
         'access' => "questo è il tuo ",
-        'pass' => "&ordm; accesso!<br />La tua password &egrave; del ",
+        'pass' => "La tua password &egrave; del ",
         'logout' => " Se vuoi uscire clicca sul pulsante ",
         'company' => " Stai amministrando la ditta:<br /> ",
         'mesg_co' => array('Non &egrave; stato trovato nulla!', 'Minimo 2 caratteri', 'Cambia azienda di lavoro'),
